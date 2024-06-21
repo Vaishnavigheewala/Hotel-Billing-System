@@ -1,0 +1,117 @@
+﻿@model HotelBillingMVC.Models.DiningTable
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/admindashboard.cshtml";
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/templatemo-klassy-cafe.css" rel="stylesheet" />
+    <link href="~/css/owl-carousel.css" rel="stylesheet" />
+    <link href="~/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/AdminReservation.css" rel="stylesheet" />
+
+}
+<html>
+<head>
+    <style>
+        /* Set background image */
+        body {
+            /*background-image: url('../images/maa.jpg');*/ /* Path to your background image */
+            background-size: 800px;
+            background-position: center;
+        }
+
+        h3 {
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .col-sm-2 {
+            font-weight: bolder;
+        }
+
+        .col-sm-10 {
+            font-weight: bolder;
+        }
+
+        /* Center the form vertically and horizontally */
+        /* .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2px;
+        } */
+
+        /* Form container */
+        
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: orangered; /* Button background color */
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            .btn-primary:hover {
+                background-color: red; /* Button background color on hover */
+            }
+
+        a {
+            color: orangered;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Delete Dining Table</h1>
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    
+    <dl class="row">
+        @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BranchId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BranchId)
+        </dd> *@
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SeatNo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SeatNo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Capacity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Capacity)
+        </dd>
+        @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ActiveFlag)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ActiveFlag)
+        </dd> *@
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tables)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tables.BranchName)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
+</body>
+</html>

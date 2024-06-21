@@ -1,0 +1,125 @@
+﻿@model IEnumerable<HotelBillingMVC.Models.Feedback>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/admindashboard.cshtml";
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/templatemo-klassy-cafe.css" rel="stylesheet" />
+    <link href="~/css/owl-carousel.css" rel="stylesheet" />
+    <link href="~/css/lightbox.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/Billing.css" rel="stylesheet" />
+    <style>
+        .rating-bar {
+            width: 100px;
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            position: relative;
+            margin-left: 10px;
+        }
+
+        .rating-bar-fill {
+            height: 100%;
+            background-color: #fb5849;
+            width: 0;
+            border-radius: 10px;
+        }
+    </style>
+}
+
+<h1>Feedbacks</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Responce)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rating)
+            </th>
+            <th></th>
+           
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Responce)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+                <td>
+
+                <div class="rating-bar">
+                    <div class="rating-bar-fill" data-rating="@item.Rating"></div>
+                </div>
+                </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+<!-- jQuery -->
+<script src="~/js/jquery-2.1.0.min.js"></script>
+<!-- Bootstrap -->
+<script src="~/js/popper.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="~/js/owl-carousel.js"></script>
+<script src="~/js/accordions.js"></script>
+<script src="~/js/datepicker.js"></script>
+<script src="~/js/scrollreveal.min.js"></script>
+<script src="~/js/waypoints.min.js"></script>
+<script src="~/js/jquery.counterup.min.js"></script>
+<script src="~/js/imgfix.min.js"></script>
+<script src="~/js/slick.js"></script>
+<script src="~/js/lightbox.js"></script>
+<script src="~/js/isotope.js"></script>
+
+<!-- Global Init -->
+<script src="~/js/custom.js"></script>
+<script>
+
+    $(function () {
+        var selectedClass = "";
+        $("p").click(function () {
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio div").not("." + selectedClass).fadeOut();
+            setTimeout(function () {
+                $("." + selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+        });
+    });
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.rating-bar-fill').each(function () {
+            var rating = $(this).data('rating');
+            var fillWidth = (rating / 5) * 100 + '%';
+            $(this).css('width', fillWidth);
+        });
+    });
+</script>
+

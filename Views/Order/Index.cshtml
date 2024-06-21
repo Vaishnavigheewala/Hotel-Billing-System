@@ -1,0 +1,224 @@
+﻿@model IEnumerable<OrderMaster>
+
+@{
+    ViewData["Title"] = "Orders";
+    Layout = "~/Views/Shared/admindashboard.cshtml";
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/templatemo-klassy-cafe.css" rel="stylesheet" />
+    <link href="~/css/owl-carousel.css" rel="stylesheet" />
+    <link href="~/css/lightbox.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/Billing.css" rel="stylesheet" />
+
+}
+
+<h1>Orders</h1>
+
+<p>
+    <a asp-action="Create" class="button-link">New Order</a>
+</p>
+<style>
+    body {
+        background-color: #f4f4f9;
+       
+    }
+
+    .form-container {
+        background-color: #fb5849;
+        padding: 5px;
+        border-radius: 2px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        margin: 20px 10px 0px 10px;
+    }
+
+        .form-container b {
+            color: black;
+            font-size: 1.2em;
+            margin-left: 10px;
+        }
+
+        .form-container .form-control {
+            margin: 10px 10px 10px 10px;
+        }
+
+        .form-container .btn-prim {
+            background-color: white;
+            border-color: white;
+            color: black;
+            font-weight: bold;
+            margin-left: 10px;
+           
+        }
+
+            .form-container .btn-prim:hover {
+                background-color: white;
+                border-color: red;
+            }
+
+        .form-container .radio-inline {
+            display: inline-block;
+            margin-right: 10px;
+            color: black;
+        }
+        
+</style>
+<p>
+    <div class="form-container">
+
+    @using (Html.BeginForm("Index", "Order", FormMethod.Get))
+    {
+        <b>Search By: </b>
+            <label class="radio-inline">@Html.RadioButton("SearchBy", "CustName", true)<span>Name</span></label>
+            <label class="radio-inline">@Html.RadioButton("SearchBy", "OrderStatus")<span>Order Status</span></label>
+        @Html.TextBox("search","",htmlAttributes:new {@class = "form-control"})
+        <button type="submit" class=" btn-prim">Search</button>
+
+    }
+    </div>
+</p>
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["Success"]
+    </div>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+@*                 @Html.DisplayNameFor(model => model.CustName)
+ *@             CustName
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDate)
+            </th>
+ 
+            <th>
+                @Html.DisplayNameFor(model => model.PaymentType)
+            </th>
+            <th>
+                Items
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                ItemPrice
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderStatus)
+            </th>
+            <th>
+                Action
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderDate)
+                </td>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.PaymentType)
+                </td>
+                <td>
+                    <ul>
+                        @foreach (var detail in item.OrderDetails)
+                        {
+                            <li>@detail.Menu.ItemName</li>
+                        }
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        @foreach (var detail in item.OrderDetails)
+                        {
+                            <li>@detail.Quantity</li>
+                        }
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        @foreach (var detail in item.OrderDetails)
+                        {
+                            <li>@detail.UnitPrice</li>
+                        }
+                    </ul>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderStatus)
+                </td>
+                <td>
+                    <form asp-action="UpdateStatus" method="post">
+                        <input type="hidden" name="Id" value="@item.Id" />
+                        <select name="status" class="form-control">
+                        <option value="Completed">Completed</option>
+                       </select>                       
+                 <button type="submit" class="btn btn-primary">Update</button>
+                    </form>
+                </td>
+                <td>
+@*                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                *@                    <a asp-action="Details" asp-route-id="@item.Id" class="button-link">Print</a>
+@*                     <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+ *@                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- jQuery -->
+<script src="~/js/jquery-2.1.0.min.js"></script>
+<!-- Bootstrap -->
+<script src="~/js/popper.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="~/js/owl-carousel.js"></script>
+<script src="~/js/accordions.js"></script>
+<script src="~/js/datepicker.js"></script>
+<script src="~/js/scrollreveal.min.js"></script>
+<script src="~/js/waypoints.min.js"></script>
+<script src="~/js/jquery.counterup.min.js"></script>
+<script src="~/js/imgfix.min.js"></script>
+<script src="~/js/slick.js"></script>
+<script src="~/js/lightbox.js"></script>
+<script src="~/js/isotope.js"></script>
+
+<!-- Global Init -->
+<script src="~/js/custom.js"></script>
+<script>
+
+    $(function () {
+        var selectedClass = "";
+        $("p").click(function () {
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio div").not("." + selectedClass).fadeOut();
+            setTimeout(function () {
+                $("." + selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+        });
+    });
+
+</script>
+
+

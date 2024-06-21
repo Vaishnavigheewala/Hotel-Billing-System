@@ -1,0 +1,187 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Help";
+    Layout = "~/Views/Shared/dashboard.cshtml";
+    <link href="~/css/templatemo-klassy-cafe.css" rel="stylesheet" />
+    <link href="~/css/owl-carousel.css" rel="stylesheet" />
+    <link href="~/css/lightbox.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/*             background-color: #f7f7f7;
+ */            margin-top: 130px;
+            padding: 0;
+        }
+
+        
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+            .header h1 {
+                color: #fb5849;
+                font-size: 36px;
+                margin: 0;
+            }
+
+            .header p {
+                color: #666;
+                font-size: 16px;
+            }
+
+        .content {
+            /* background-color: #fff; */
+            background: linear-gradient(145deg, #ffe6e6, #fff);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .content h2 {
+                color: #333;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .content p {
+                color: #666;
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            .content a {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+                .content a:hover {
+                    color: white;
+                }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fb5849;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+            .button:hover {
+                background-color: red;
+            }
+
+        .faq-section {
+            margin-top: 40px;
+            background: linear-gradient(145deg, #ffe6e6, #fff);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .faq-section h3 {
+                color: #fb5849;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .faq-section p {
+                color: #666;
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+      
+    </style>
+    <title>Help Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Fenvial Help??</h1>
+            <p>Find answers to your questions and get support for your Hotel Dining Booking</p>
+        </div>
+        <div class="content">
+            <h2>How can we help you?</h2>
+            <p>If you have any questions or need further assistance, please contact our support team by clicking the button below.</p>
+            <a class="button" asp-area="" asp-controller="Profile" asp-action="Contact">Contact Support</a>
+        </div>
+
+        <div class="faq-section">
+            <h3>Frequently Asked Questions</h3>
+            <p>
+                <strong>Q: How do I make a table booking at your hotel?</strong><br>
+                A: You can book a table by visiting our booking page and selecting your preferred date and time. You can also call our reservations desk at +1-800-123-4567 for assistance.
+            </p>
+
+            <p><strong>Q: How do I reset my password?</strong><br>A: To reset your password, go to the login page and click on the "Forgot Password" link.</p>
+            <p><strong>Q: How do I update my profile information?</strong><br>A: To update your profile information, log in to your account and navigate to the profile settings page.</p>
+            <p>
+                <strong>Q: Do you offer special arrangements for large groups?</strong><br>
+                A: Yes, we have special packages and arrangements for large groups. Please contact our events team at events@hotel.com or call +1-800-123-4567 for more details.
+            </p>
+
+
+            <!-- Add more FAQs as needed -->
+        </div>
+    </div>
+</body>
+</html>
+<!-- jQuery -->
+<script src="~/js/jquery-2.1.0.min.js"></script>
+<!-- Bootstrap -->
+<script src="~/js/popper.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="~/js/owl-carousel.js"></script>
+<script src="~/js/accordions.js"></script>
+<script src="~/js/datepicker.js"></script>
+<script src="~/js/scrollreveal.min.js"></script>
+<script src="~/js/waypoints.min.js"></script>
+<script src="~/js/jquery.counterup.min.js"></script>
+<script src="~/js/imgfix.min.js"></script>
+<script src="~/js/slick.js"></script>
+<script src="~/js/lightbox.js"></script>
+<script src="~/js/isotope.js"></script>
+
+<!-- Global Init -->
+<script src="~/js/custom.js"></script>
+<script>
+
+    $(function () {
+        var selectedClass = "";
+        $("p").click(function () {
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio div").not("." + selectedClass).fadeOut();
+            setTimeout(function () {
+                $("." + selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+        });
+    });
+
+</script>
+

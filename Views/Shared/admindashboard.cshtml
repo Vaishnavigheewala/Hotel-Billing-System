@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Fenvial Billing System</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <link href="~/css/lightbox.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/owl-carousel.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+   
+
+        
+</head>
+<body>
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">
+                            <img src="~/images/logo.png" align="Fenvial html template" height="80" />
+                        </a>
+                       
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="AdminDashboard">
+                                    <span class="feather" data-feather="dashboard"></span>
+                                    Home
+                                </a>
+                            </li>
+                           @*  <li class="nav-item">
+                                <a class="nav-link active" asp-area="" asp-controller="Usermasters" asp-action="Index">
+                                    <span class="feather" data-feather=" User-Management"></span>
+                                    User Management
+                                </a>
+                            </li> *@    
+                            <li class="submenu">
+                                <a href="javascript:;">Management</a>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" asp-area="" asp-controller="Usermasters" asp-action="Index">
+                                            <span class="feather" data-feather="User-Management"></span>
+                                            Manage_user
+                                        </a>
+                                    </li>
+                                    <li class ="nav-item">
+                                        <a class="nav-link active" asp-area="" asp-controller="Reservations" asp-action="Index">
+                                            <span class="feather" data-feather="Reservation-Management"></span>
+                                          Reservations
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="nav-link active" asp-area="" asp-controller="DiningTables" asp-action="Index">
+                                            <span class="feather" data-feather="Reservation-Management"></span>
+                                            Dining Tables 
+                                        </a>
+                                    </li>
+                                    @* <li><a href="#">Features Page 3</a></li>
+                                    <li><a href="#">Features Page 4</a></li> *@
+                                </ul>
+                            </li>
+                           @*  <li class="nav-item">
+                                <a class="nav-link active" asp-area="" asp-controller="Reservations" asp-action="Index">
+                                    <span class="feather" data-feather="Reservation-Management"></span>
+                                    Dining Management
+                                </a>
+                            </li> *@
+                            @* <li class="nav-item">
+                                <a class="nav-link active" asp-area="" asp-controller="DiningTables" asp-action="Index">
+                                    <span class="feather" data-feather="Reservation-Management"></span>
+                                    Dining Management
+                                </a>
+                            </li> *@
+                            <li class="nav-item">
+                                <a class="nav-link active" asp-area="" asp-controller="Order" asp-action="Index">
+                                    <span class="feather" data-feather="Billing"></span>
+                                    Billing
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" asp-area="" asp-controller="Feedbacks" asp-action="Index">
+                                    <span class="feather" data-feather="Feedback"></span>
+                                    Feedback
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="firstpage">
+                                    <span class="feather" data-feather="Logout"></span>
+                                    LogOut
+                                </a>
+                            </li>
+
+                            
+                        </ul>
+                        
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div>
+   
+            <!-- Main content -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-12 px-md-4">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xs-12">
+                    <div class="right-text-content">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="~/images/logo.png" alt="" height="75" width="200" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                    <div class="left-text-content">
+                        <p>
+                            © Copyright Fenvial Hotel Co.
+
+                            <br>Design by Commnet Development India
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+@*     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+ *@   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

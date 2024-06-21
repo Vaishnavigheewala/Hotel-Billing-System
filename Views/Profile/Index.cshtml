@@ -1,0 +1,103 @@
+﻿@model HotelBillingMVC.Models.Usermaster
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/dashboard.cshtml";
+  
+
+}
+
+<html>
+<head>
+    <style>
+
+        h3 {
+            color: navy;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .button-link {
+            display: inline-block; /* Make the link behave like a button */
+            padding: 8px 25px; /* Add padding for button-like appearance */
+            background-color: navy; /* Background color */
+            color: white; /* Text color */
+            text-align: center; /* Center-align text */
+            text-decoration: none; /* Remove underline */
+            border: none; /* Remove border */
+            border-radius: 4px; /* Rounded corners */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth background color transition */
+        }
+
+            .button-link:hover {
+                background-color: red; /* Darker background color on hover */
+            }
+
+
+    </style>
+
+</head>
+<body>
+
+<h1>Index</h1>
+
+<div>
+    <h3>User Profile</h3>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ActiveFlag)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ActiveFlag)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Role)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Role.Id)
+        </dd> *@
+    </dl>
+</div>
+<div>
+    <a asp-action="EditProfile" asp-route-id="@Model?.Id" class="button-link">Edit Profile</a>
+    @*     <a asp-action="Index">Back to List</a>
+ *@
+</div>
+</body>
+
+</html>

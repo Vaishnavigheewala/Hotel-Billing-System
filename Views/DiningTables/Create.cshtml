@@ -1,0 +1,186 @@
+﻿@model HotelBillingMVC.Models.DiningTable
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/admindashboard.cshtml";
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/templatemo-klassy-cafe.css" rel="stylesheet" />
+    <link href="~/css/owl-carousel.css" rel="stylesheet" />
+    <link href="~/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+}
+<html>
+    <head>
+    <style>
+        /* Set background image */
+        body {
+            /*background-image: url('../images/maa.jpg');*/ /* Path to your background image */
+            background-size: 800px;
+            background-position: center;
+        }
+
+        h4 {
+            text-align: center;
+            color: #fb5849;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        /* Center the form vertically and horizontally */
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2px;
+        }
+
+        /* Form container */
+        .col-md-4 {
+            max-height: 800px;
+            /*  background-color: white;*/
+            background: linear-gradient(145deg, #ffe6e6, #fff);
+            /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        /* Styles for form elements */
+        .form-group {
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .control-label {
+            font-weight: bold;
+            color: orangered;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 5px;
+            margin-top: 2px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            margin-top: -20px;
+            border: none;
+            border-radius: 5px;
+            background-color: orangered; /* Button background color */
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            .btn-primary:hover {
+                background-color: red; /* Button background color on hover */
+            }
+
+        .form-check-label {
+            display: flex;
+            align-items: center;
+            color: orangered;
+            font-weight: bold;
+            margin-top: -25px;
+        }
+
+        .form-check-input {
+            margin-right: 10px;
+        }
+
+
+        a {
+            color: orangered;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    </style>
+    </head>
+    <body>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h4>DiningTable</h4>
+
+            <div class="form-group">
+                <label asp-for="TablesId" class="control-label">Branch Name</label>
+                <select asp-for="TablesId" class ="form-control" asp-items="ViewBag.TablesId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="SeatNo" class="control-label"></label>
+                <input asp-for="SeatNo" class="form-control" placeholder="Seat Number must be digit" type="number" required />
+                <div class="invalid-feedback">
+                    Seat Number must be digit..Not required Alaphabet.
+                </div>
+                <span asp-validation-for="SeatNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Capacity" class="control-label"></label>
+                <input asp-for="Capacity" class="form-control" placeholder="Capacity must be digit" type="number" required />
+                <span asp-validation-for="Capacity" class="text-danger"></span>
+            </div><br />
+            @* <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="ActiveFlag" /> @Html.DisplayNameFor(model => model.ActiveFlag)
+                </label>
+            </div> *@
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+                <div>
+                    <a asp-action="Index">Go to Back</a>
+                </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+<!-- jQuery -->
+<script src="~/js/jquery-2.1.0.min.js"></script>
+<!-- Bootstrap -->
+<script src="~/js/popper.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="~/js/owl-carousel.js"></script>
+<script src="~/js/accordions.js"></script>
+<script src="~/js/datepicker.js"></script>
+<script src="~/js/scrollreveal.min.js"></script>
+<script src="~/js/waypoints.min.js"></script>
+<script src="~/js/jquery.counterup.min.js"></script>
+<script src="~/js/imgfix.min.js"></script>
+<script src="~/js/slick.js"></script>
+<script src="~/js/lightbox.js"></script>
+<script src="~/js/isotope.js"></script>
+
+<!-- Global Init -->
+<script src="~/js/custom.js"></script>
+<script>
+
+    $(function () {
+        var selectedClass = "";
+        $("p").click(function () {
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio div").not("." + selectedClass).fadeOut();
+            setTimeout(function () {
+                $("." + selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+        });
+    });
+
+</script>
+
+

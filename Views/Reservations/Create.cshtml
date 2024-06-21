@@ -1,0 +1,233 @@
+﻿@model HotelBillingMVC.Models.Reservation
+@using Newtonsoft.Json;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor accessor;
+@using Microsoft.AspNetCore.Http;
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/dashboard.cshtml";
+    var user = JsonConvert.DeserializeObject<Usermaster>(accessor.HttpContext.Session.GetString("UserSession"));
+
+    <link rel="stylesheet" href="~/css/res.css" />
+}
+
+
+<hr />
+
+<div class="row">
+    <div class="col-md-8">
+        @* @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-success" role="alert">
+                @TempData["SuccessMessage"]
+            </div>
+        } *@
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h4><center>Fenvial Dining Booking</center></h4>
+            <hr />
+
+            <div class="row">
+                <div class="col-md-4">
+
+            <div class="form-group">
+                <label asp-for="ReservationuserId" class="control-label">USER :</label>
+                        <input type="text" class="form-control" value="@user.Username" readonly />
+                        <input type="hidden" asp-for="ReservationuserId" class="form-control" value="@user.Id"  />
+@*                  <select asp-for="ReservationuserId" class="form-control" asp-items="ViewBag.ReservationuserId" value="@ViewBag.CurrentUsername"></select>
+ *@                        <span asp-validation-for="ReservationuserId" class="text-danger"></span> 
+            </div>
+            </div>
+                <div class="col-md-4">
+
+             <div class="form-group">
+                    <label asp-for="ReservationTablesId" class="control-label">Capacity :</label>
+                        <select asp-for="ReservationTablesId" id="classSelect" class="form-control" asp-items="ViewBag.ReservationTablesId"></select>
+                    <span asp-validation-for="ReservationTablesId" class="text-danger"></span>
+            </div> 
+            </div>
+
+                <div class="col-md-4">
+
+            <div class="form-group">
+                <label asp-for="ReservationTimeslotsId" class="control-label">MEAL TYPE :</label>
+                <select asp-for="ReservationTimeslotsId" class ="form-control" asp-items="ViewBag.ReservationTimeslotsId"></select>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+
+                    <div class="col-md-4">
+
+            <div class="form-group">
+                <label asp-for="ReservationBranchesId" class="control-label">BRANCH NAME :</label>
+                <select asp-for="ReservationBranchesId" class="form-control" asp-items="ViewBag.ReservationBranchName"></select>
+            </div>
+            </div>
+           
+                <div class="col-md-4">
+
+            <div class="form-group">
+                <label asp-for="ResevationRestId" class="control-label">RESTAURENT :</label>
+                <select asp-for="ResevationRestId" class ="form-control" asp-items="ViewBag.ResevationRestId"></select>
+            </div>
+            </div>
+                    <div class="col-md-4">
+
+            <div class="form-group">
+                        <label asp-for="ReservationDate" class="control-label">RESERVATION DATE :</label>
+                        <input asp-for="ReservationDate" class="form-control" id="reservationDateTime" />
+                <span asp-validation-for="ReservationDate" class="text-danger"></span>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+
+            <div class="form-group">
+                        <label asp-for="ReservationStatus" class="control-label">RESERVATION STATUS :</label>
+                <input asp-for="ReservationStatus" class="form-control" value="Booked" readonly />             
+                <span asp-validation-for="ReservationStatus" class="text-danger"></span>
+            </div>
+                </div>
+
+                    @* <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">Seat Number</label>
+                        <span id="seatNumberDisplay" class="form-control-static">Please select capacity</span>
+                    </div>
+                    </div> *@
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="ActiveFlag" required /> 
+                             Agree Terms & Conditions
+
+                </label>
+            </div>
+            </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+            <div class="form-group">
+                <input type="submit" value="Reserv Table" class="btn btn-primary" />
+            </div>
+                </div>
+
+                @* <div class="col-md-4">
+                    <div class="form-group">
+                        <input type="submit" value="Cancel Table" class="btn btn-primary" asp-controller="Reservations" asp-action="Cancel" />
+            </div>
+            </div> *@
+            </div>
+        </form>
+        <p id="seatNumberPlaceholder">Seat Number: </p>
+        
+        <div id="message" class="alert alert-info">
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success">
+                    @TempData["SuccessMessage"]
+                </div>
+            }
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#classSelect').change(function () {
+                var selectedCapacity = $(this).val();
+
+                // Make an AJAX call to get the seat number based on the selected capacity
+                $.ajax({
+                    url: '/Reservations/GetSeatNumberByCapacity',
+                    type: 'GET',
+                    data: { capacity: selectedCapacity },
+                    success: function (response) {
+                        $('#seatNumberPlaceholder').text('Seat Number: ' + response.seatNo);
+                    },
+                    error: function () {
+                        $('#seatNumberPlaceholder').text('Seat Number: Not Available');
+                    }
+                });
+            });
+        });
+    </script>
+
+}
+
+<script>
+    function validateReservationDateTime() {
+        const dateTimeInput = document.getElementById("reservationDateTime");
+        const dateTimeValue = new Date(dateTimeInput.value);
+        const currentDate = new Date();
+        const oneYearFromNow = new Date();
+        oneYearFromNow.setFullYear(currentDate.getFullYear() + 1);
+
+        // Check if the date is in the past
+        if (dateTimeValue < currentDate) {
+            alert("Reservation date and time cannot be in the past.");
+            return false;
+        }
+
+        // Check if the date is within the next year
+        if (dateTimeValue > oneYearFromNow) {
+            alert("Reservation date and time must be within the next year.");
+            return false;
+        }
+
+        // If all checks pass
+        return true;
+    }
+
+    document.querySelector("form").onsubmit = validateReservationDateTime;
+</script>
+
+
+<!-- jQuery -->
+<script src="~/js/jquery-2.1.0.min.js"></script>
+<!-- Bootstrap -->
+<script src="~/js/popper.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="~/js/owl-carousel.js"></script>
+<script src="~/js/accordions.js"></script>
+<script src="~/js/datepicker.js"></script>
+<script src="~/js/scrollreveal.min.js"></script>
+<script src="~/js/waypoints.min.js"></script>
+<script src="~/js/jquery.counterup.min.js"></script>
+<script src="~/js/imgfix.min.js"></script>
+<script src="~/js/slick.js"></script>
+<script src="~/js/lightbox.js"></script>
+<script src="~/js/isotope.js"></script>
+
+<!-- Global Init -->
+<script src="~/js/custom.js"></script>
+<script>
+
+    $(function () {
+        var selectedClass = "";
+        $("p").click(function () {
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio div").not("." + selectedClass).fadeOut();
+            setTimeout(function () {
+                $("." + selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+        });
+    });
+
+</script>

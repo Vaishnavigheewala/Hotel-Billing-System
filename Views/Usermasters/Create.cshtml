@@ -1,0 +1,85 @@
+﻿@model HotelBillingMVC.Models.Usermaster
+
+@{
+    ViewData["Title"] = "Create";
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/page_layout.cshtml";
+
+    <link rel="stylesheet" href="~/css/regis.css" />
+
+}
+
+<h1>Create</h1>
+
+<h4>Usermaster</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" placeholder="Enter Your Name" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" placeholder="Enter Your Valid Mail Id" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" placeholder="5or6 digit Password(Alaphabet & Number)" type="password" minlength="6" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" />
+                <div class="invalid-feedback">
+                    Password must be at least 6 characters long, contain at least one letter and one number.
+                </div>
+                @* <span asp-validation-for="Password" class="text-danger"></span> *@
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" type="tel" pattern="^\d{10}$" placeholder="Enter Vaild Contact Number" />
+                <div class="invalid-feedback">
+                    Phone number must be 10 digits.
+                </div>
+                @* <span asp-validation-for="PhoneNumber" class="text-danger"></span> *@
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label"></label>
+@*                 <input asp-for="Gender" class="form-control" />
+ *@
+                <div class="form-group">
+                    <input class="form-check-input" type="radio" asp-for="Gender" value="Male" id="genderMale" checked>
+                    <label class="control-label" for="genderMale">Male</label>
+                </div>
+                <div class="form-group">
+                    <input class="form-check-input" type="radio" asp-for="Gender" value="Female" id="genderFemale" checked>
+                    <label class="control-label" for="genderFemale">Female</label>
+                </div>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            @* <div class="form-group">
+                <label asp-for="RoleId" class="control-label"></label>
+                <select asp-for="RoleId" class="form-control" asp-items="ViewBag.RoleId" value="user"></select>
+            </div> *@
+            <input type="hidden" asp-for="RoleId" value="@ViewBag.DefaultRoleName" />
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="ActiveFlag" required /> 
+                    Agree Terms & Conditions
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-primary" />
+            </div>
+
+            <div>
+                <a asp-area="" asp-controller="Home" asp-action="Login">Log In</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

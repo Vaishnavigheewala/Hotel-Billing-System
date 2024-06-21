@@ -1,0 +1,63 @@
+﻿@using Microsoft.AspNetCore.Http;
+@using Newtonsoft.Json;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor accessor;
+
+@{
+    ViewData["Title"] = "Thank You";
+    Layout = "~/Views/Shared/dashboard.cshtml";
+    Usermaster user = JsonConvert.DeserializeObject<Usermaster>(accessor.HttpContext.Session.GetString("UserSession"));
+
+    <link rel="stylesheet" href="~/css/dash.css" />
+}
+
+<h2>@ViewData["Title"]</h2>
+<section class="section" id="offers">
+    <div class="container">
+        <div class="row">
+
+            <div class="jumbotron">
+                <h1 class="display-4">
+                   
+                    Thank you @user.Username.ToString() for your Feedback!
+                    !
+                </h1>
+                <p class="lead">We are at your service for any special Request ... See You Soon!</p>
+                <hr class="my-4">
+                @*     <h1>Hello , @ViewBag.MySession</h1>
+                *@
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <style>
+                        .round-image {
+                            width: 100px; /* Adjust the size as needed */
+                            height: 100px; /* Adjust the size as needed */
+                            border-radius: 50%;
+                            object-fit: cover; /* Ensures the image covers the entire area */
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a nice effect */
+                            margin-left: 30px;
+                        }
+                    </style>
+                    <title>Round Image Example</title>
+                </head>
+                <body>
+                    <center>
+                    <img src="~/images/tab-item-02.png" alt="Round Image" class="round-image"/>
+                    <img src="~/images/about-thumb-03.jpg" alt="Round Image" class="round-image" />
+                    <img src="~/images/menu-item-04.jpg" alt="Round Image" class="round-image" />
+                    <img src="~/images/tab-item-05.png" alt="Round Image" class="round-image" />
+                    <br></br>
+                    <p>Thank You for Reservation with us!</p> 
+@*                     <p>We are eager to make your visit special. </p>
+ *@                    <p>We are here to ensure your Comfort and Enjoyment ... </p>
+                    </center>
+                </body>
+            </html>
+
+                
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewData["Title"] = "AdminDashboard";
+    Layout = "~/Views/Shared/admindashboard.cshtml";
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/templatemo-klassy-cafe.css" rel="stylesheet" />
+    <link href="~/css/owl-carousel.css" rel="stylesheet" />
+    <link href="~/css/lightbox.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+}
+<div id="top">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="left-content">
+                    <div class="inner-content">
+                        <h4>Fenvial</h4>
+                        <h6>THE BEST EXPERIENCE</h6>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="main-banner header-text">
+                    <div class="Modern-Slider">
+                        <!-- Item -->
+                        <div class="item">
+                            <div class="img-fill">
+                                <img src="~/images/slide-01.jpg" alt="">
+
+                            </div>
+                        </div>
+                        <!-- // Item -->
+                        <!-- Item -->
+                        <div class="item">
+                            <div class="img-fill">
+                                <img src="~/images/slide-02.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- // Item -->
+                        <!-- Item -->
+                        <div class="item">
+                            <div class="img-fill">
+                                <img src="~/images/slide-03.jpg" alt="">
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery -->
+<script src="~/js/jquery-2.1.0.min.js"></script>
+<!-- Bootstrap -->
+<script src="~/js/popper.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="~/js/owl-carousel.js"></script>
+<script src="~/js/accordions.js"></script>
+<script src="~/js/datepicker.js"></script>
+<script src="~/js/scrollreveal.min.js"></script>
+<script src="~/js/waypoints.min.js"></script>
+<script src="~/js/jquery.counterup.min.js"></script>
+<script src="~/js/imgfix.min.js"></script>
+<script src="~/js/slick.js"></script>
+<script src="~/js/lightbox.js"></script>
+<script src="~/js/isotope.js"></script>
+
+<!-- Global Init -->
+<script src="~/js/custom.js"></script>
+<script>
+
+    $(function () {
+        var selectedClass = "";
+        $("p").click(function () {
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio div").not("." + selectedClass).fadeOut();
+            setTimeout(function () {
+                $("." + selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+        });
+    });
+
+</script>
+
+

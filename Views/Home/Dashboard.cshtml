@@ -1,0 +1,73 @@
+﻿@using Microsoft.AspNetCore.Http;
+@using Newtonsoft.Json;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor accessor;
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/dashboard.cshtml";
+
+    Usermaster user = JsonConvert.DeserializeObject<Usermaster>(accessor.HttpContext.Session.GetString("UserSession"));
+
+}
+
+@* <h1>Dashboard</h1>
+<h1>@ViewBag.MySession</h1> *@
+<section class="section" id="offers">
+    <div class="container">
+        <div class="row">
+
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Fenvial Restaurent!</h1>
+    <p class="lead">Enjoy Delicious Food...</p>
+    <hr class="my-4">
+@*     <h1>Hello , @ViewBag.MySession</h1>
+ *@    
+    <h1>@user.Username.ToString()</h1>
+    <h1>@user.Email.ToString()</h1>
+
+    <!-- Add more dashboard content here -->
+    <h2>Welcome to Your Dashboard</h2>
+    <a class="nav-link" asp-area="" asp-controller="Reservations" asp-action="Create">Book Table </a>
+ 
+</div>
+</div>
+</div>
+</section>
+
+<!-- jQuery -->
+<script src="~/js/jquery-2.1.0.min.js"></script>
+<!-- Bootstrap -->
+<script src="~/js/popper.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="~/js/owl-carousel.js"></script>
+<script src="~/js/accordions.js"></script>
+<script src="~/js/datepicker.js"></script>
+<script src="~/js/scrollreveal.min.js"></script>
+<script src="~/js/waypoints.min.js"></script>
+<script src="~/js/jquery.counterup.min.js"></script>
+<script src="~/js/imgfix.min.js"></script>
+<script src="~/js/slick.js"></script>
+<script src="~/js/lightbox.js"></script>
+<script src="~/js/isotope.js"></script>
+
+<!-- Global Init -->
+<script src="~/js/custom.js"></script>
+<script>
+
+    $(function () {
+        var selectedClass = "";
+        $("p").click(function () {
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio div").not("." + selectedClass).fadeOut();
+            setTimeout(function () {
+                $("." + selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+        });
+    });
+
+</script>
+

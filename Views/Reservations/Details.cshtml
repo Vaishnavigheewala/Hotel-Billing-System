@@ -1,0 +1,89 @@
+﻿@model HotelBillingMVC.Models.Reservation
+
+@{
+    ViewData["Title"] = "Reservation Details";
+}
+
+<h2>Reservation Details</h2>
+
+<div>
+    <h4>Reservation Information</h4>
+    <hr />
+    <table border="3" class="table">
+        <thead>
+            <tr>
+                <th>Table Number</th>
+                <th>Order date</th>
+                <th>Payment Method</th>
+                <th>Bill Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li>@Model.ReservationTablesId</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>@Model.ReservationDate</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>@Model.ReservationTimeslots</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>@Model.ReservationStatus</li>
+                    </ul>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+@* <div>
+    <h3>Items Billing Details</h3>
+    <table border="3" class="table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Item Price</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderDetails)
+            {
+                <tr>
+                    <td>
+                        <ul>
+                            <li>@item.Menu.ItemName</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>@item.Quantity</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>@item.UnitPrice</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>@(item.Quantity * item.UnitPrice)</li>
+                        </ul>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+ *@

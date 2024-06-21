@@ -1,0 +1,172 @@
+﻿@model HotelBillingMVC.Models.OrderMaster
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/admindashboard.cshtml";
+        <link href="~/css/font-awesome.css" rel="stylesheet" />
+        <link href="~/css/templatemo-klassy-cafe.css" rel="stylesheet" />
+        <link href="~/css/owl-carousel.css" rel="stylesheet" />
+        <link href="~/css/lightbox.css" rel="stylesheet" />
+        <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+         <link rel="stylesheet" href="~/css/Print_Bill.css" />
+
+}
+
+@* <h3 >Bill Details</h3> *@
+
+<div id="pdfContainer">
+   @*  <h4>OrderMaster</h4>
+    <hr /> *@
+    <div>
+        <h2>Fenvial Hotel<br /> Customer Name : @Model.CustName</h2>
+       
+    </div>
+    <div>
+        <h3>Billing Details</h3>
+        @* Display error message if bill generation fails *@
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @TempData["ErrorMessage"]
+            </div>
+        }
+        <table border="3" class="table">
+            <thead>
+                <tr>
+                    <th>Table Number</th>
+                    <th>Order date</th>
+                    <th>Payment Method</th>
+                    <th>Bill Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>@Model.TableId</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>@Model.OrderDate</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>@Model.PaymentType</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>@Model.OrderStatus</li>
+                            </ul>
+                        </td>
+                    </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h3>Items Billing Details</h3>
+        <table border="3" class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Item Price</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.OrderDetails)
+                {
+                <tr>
+                <td>
+                    <ul>
+                            <li>@item.Menu.ItemName</li> 
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                            <li>@item.Quantity</li>                       
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                            <li>@item.UnitPrice</li>
+                    </ul>
+                </td>
+                        <td>
+                            <ul>
+                                <li>@(item.Quantity * item.UnitPrice)</li>
+                            </ul>
+                        </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h4>Total Amount: @Model.TotalAmount</h4>
+    </div>
+    
+    </div>
+
+<div>
+    <a class="back-link" asp-action="Index">View Orders</a>
+</div>
+<div>
+    <button id="printButton" class="btn btn-primary">Generate PDF</button>
+
+</div>
+
+<script>
+    document.getElementById('printButton').addEventListener('click', function () {
+        window.location.href = '@Url.Action("Generatepdf", "Order", new { id = Model.Id })';
+    });
+</script>
+
+
+
+<!-- jQuery -->
+<script src="~/js/jquery-2.1.0.min.js"></script>
+<!-- Bootstrap -->
+<script src="~/js/popper.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="~/js/owl-carousel.js"></script>
+<script src="~/js/accordions.js"></script>
+<script src="~/js/datepicker.js"></script>
+<script src="~/js/scrollreveal.min.js"></script>
+<script src="~/js/waypoints.min.js"></script>
+<script src="~/js/jquery.counterup.min.js"></script>
+<script src="~/js/imgfix.min.js"></script>
+<script src="~/js/slick.js"></script>
+<script src="~/js/lightbox.js"></script>
+<script src="~/js/isotope.js"></script>
+
+<!-- Global Init -->
+<script src="~/js/custom.js"></script>
+<script>
+
+    $(function () {
+        var selectedClass = "";
+        $("p").click(function () {
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+            $("#portfolio div").not("." + selectedClass).fadeOut();
+            setTimeout(function () {
+                $("." + selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+            }, 500);
+
+        });
+    });
+
+</script>
+
