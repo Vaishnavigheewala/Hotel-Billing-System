@@ -1,0 +1,605 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HotelBillingMVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HotelBillingMVC.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\AdminReservation.css",
+      "PackagePath": "staticwebassets\\css\\AdminReservation.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\Billing.css",
+      "PackagePath": "staticwebassets\\css\\Billing.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\Print_Bill.css",
+      "PackagePath": "staticwebassets\\css\\Print_Bill.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\dash.css",
+      "PackagePath": "staticwebassets\\css\\dash.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\feed.css",
+      "PackagePath": "staticwebassets\\css\\feed.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\flex-slider.css",
+      "PackagePath": "staticwebassets\\css\\flex-slider.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\lightbox.css",
+      "PackagePath": "staticwebassets\\css\\lightbox.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\orderform.css",
+      "PackagePath": "staticwebassets\\css\\orderform.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\owl-carousel.css",
+      "PackagePath": "staticwebassets\\css\\owl-carousel.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\regis.css",
+      "PackagePath": "staticwebassets\\css\\regis.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\res.css",
+      "PackagePath": "staticwebassets\\css\\res.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\css\\templatemo-klassy-cafe.css",
+      "PackagePath": "staticwebassets\\css\\templatemo-klassy-cafe.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\flexslider-icon.eot",
+      "PackagePath": "staticwebassets\\fonts\\flexslider-icon.eot"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\flexslider-icon.svg",
+      "PackagePath": "staticwebassets\\fonts\\flexslider-icon.svg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\flexslider-icon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\flexslider-icon.ttf"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\flexslider-icon.woff",
+      "PackagePath": "staticwebassets\\fonts\\flexslider-icon.woff"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\fonts\\slick.eot"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\fonts\\slick.svg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\fonts\\slick.woff"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\Hotel.jpg",
+      "PackagePath": "staticwebassets\\images\\Hotel.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\Logo.png",
+      "PackagePath": "staticwebassets\\images\\Logo.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\about-thumb-01.jpg",
+      "PackagePath": "staticwebassets\\images\\about-thumb-01.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\about-thumb-02.jpg",
+      "PackagePath": "staticwebassets\\images\\about-thumb-02.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\about-thumb-03.jpg",
+      "PackagePath": "staticwebassets\\images\\about-thumb-03.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\about-video-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\about-video-bg.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\asdf.jpeg",
+      "PackagePath": "staticwebassets\\images\\asdf.jpeg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\calandar-booknow.gif",
+      "PackagePath": "staticwebassets\\images\\calandar-booknow.gif"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\chefs-01.jpg",
+      "PackagePath": "staticwebassets\\images\\chefs-01.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\chefs-02.jpg",
+      "PackagePath": "staticwebassets\\images\\chefs-02.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\chefs-03.jpg",
+      "PackagePath": "staticwebassets\\images\\chefs-03.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\close.png",
+      "PackagePath": "staticwebassets\\images\\close.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\dining-table.png",
+      "PackagePath": "staticwebassets\\images\\dining-table.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\klassy-logo.png",
+      "PackagePath": "staticwebassets\\images\\klassy-logo.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\images\\loading.gif"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\maa.jpg",
+      "PackagePath": "staticwebassets\\images\\maa.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\menu-item-01.jpg",
+      "PackagePath": "staticwebassets\\images\\menu-item-01.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\menu-item-02.jpg",
+      "PackagePath": "staticwebassets\\images\\menu-item-02.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\menu-item-03.jpg",
+      "PackagePath": "staticwebassets\\images\\menu-item-03.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\menu-item-04.jpg",
+      "PackagePath": "staticwebassets\\images\\menu-item-04.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\menu-item-05.jpg",
+      "PackagePath": "staticwebassets\\images\\menu-item-05.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\next.png",
+      "PackagePath": "staticwebassets\\images\\next.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\prev.png",
+      "PackagePath": "staticwebassets\\images\\prev.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\regi.png",
+      "PackagePath": "staticwebassets\\images\\regi.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\reservation-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\reservation-bg.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\reservation.jpg",
+      "PackagePath": "staticwebassets\\images\\reservation.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\slide-01.jpg",
+      "PackagePath": "staticwebassets\\images\\slide-01.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\slide-02.jpg",
+      "PackagePath": "staticwebassets\\images\\slide-02.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\slide-03.jpg",
+      "PackagePath": "staticwebassets\\images\\slide-03.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\tab-icon-01.png",
+      "PackagePath": "staticwebassets\\images\\tab-icon-01.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\tab-icon-02.png",
+      "PackagePath": "staticwebassets\\images\\tab-icon-02.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\tab-icon-03.png",
+      "PackagePath": "staticwebassets\\images\\tab-icon-03.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\tab-item-01.png",
+      "PackagePath": "staticwebassets\\images\\tab-item-01.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\tab-item-02.png",
+      "PackagePath": "staticwebassets\\images\\tab-item-02.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\tab-item-03.png",
+      "PackagePath": "staticwebassets\\images\\tab-item-03.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\tab-item-04.png",
+      "PackagePath": "staticwebassets\\images\\tab-item-04.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\tab-item-05.png",
+      "PackagePath": "staticwebassets\\images\\tab-item-05.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\tab-item-06.png",
+      "PackagePath": "staticwebassets\\images\\tab-item-06.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\top-left-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\top-left-bg.jpg"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\images\\white-logo.png",
+      "PackagePath": "staticwebassets\\images\\white-logo.png"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\accordions.js",
+      "PackagePath": "staticwebassets\\js\\accordions.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\datepicker.js",
+      "PackagePath": "staticwebassets\\js\\datepicker.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\imgfix.min.js",
+      "PackagePath": "staticwebassets\\js\\imgfix.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\isotope.js",
+      "PackagePath": "staticwebassets\\js\\isotope.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\jquery-2.1.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-2.1.0.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\lightbox.js",
+      "PackagePath": "staticwebassets\\js\\lightbox.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\owl-carousel.js",
+      "PackagePath": "staticwebassets\\js\\owl-carousel.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\popper.js",
+      "PackagePath": "staticwebassets\\js\\popper.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\scrollreveal.min.js",
+      "PackagePath": "staticwebassets\\js\\scrollreveal.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\slick.js",
+      "PackagePath": "staticwebassets\\js\\slick.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\A MSC\\Sem 2\\202 NET\\HotelBillingMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.HotelBillingMVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.HotelBillingMVC.props",
+      "PackagePath": "build\\HotelBillingMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.HotelBillingMVC.props",
+      "PackagePath": "buildMultiTargeting\\HotelBillingMVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.HotelBillingMVC.props",
+      "PackagePath": "buildTransitive\\HotelBillingMVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
