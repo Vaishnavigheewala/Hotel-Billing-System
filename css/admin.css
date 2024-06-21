@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean, readable font */
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Heading Styles */
+h4 {
+    color: navy; /* Navy blue color */
+    font-size: 24px; /* Larger font size */
+    text-align: center; /* Center align */
+    margin-top: 100px; /* Space above the heading */
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+/* Table Container */
+.table {
+    width: 80%;
+    margin-top: 20px;
+    margin-left:150px;
+    
+    border-collapse: collapse;
+    background-color: white; /* White background for the table */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Slight shadow for better appearance */
+}
+
+    /* Table Header */
+    .table thead th {
+        background-color: #fb5849; /* Navy blue background color */
+        color: white; /* White text */
+        padding: 15px; /* Padding for better spacing */
+        text-align: left; /* Align text to the left */
+        font-size: 16px; /* Font size */
+        border-bottom: 2px solid #ddd; /* Bottom border */
+    }
+
+    /* Table Body */
+    .table tbody tr {
+        border-bottom: 1px solid #ddd; /* Bottom border for rows */
+    }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f2f2f2; /* Different background for even rows */
+        }
+
+    .table tbody td {
+        padding: 15px; /* Padding for better spacing */
+        text-align: left; /* Align text to the left */
+        font-size: 14px; /* Font size */
+    }
+
+    /* Table Hover Effect */
+    .table tbody tr:hover {
+        background-color: #ddd; /* Background color on hover */
+    }
+
+    /* Link Styles */
+    
+
+/* Link as Button Styles */
+.button-link {
+    display: inline-block; /* Make the link behave like a button */
+    padding: 10px 20px; /* Add padding for button-like appearance */
+    background-color: #fb5849; /* Background color */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+    .button-link:hover {
+        background-color: red; /* Darker background color on hover */
+    }

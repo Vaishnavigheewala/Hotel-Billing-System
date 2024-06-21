@@ -1,0 +1,127 @@
+/* General Table Styles */
+.table {
+    width:100%;
+    margin-top: 50px;
+    margin-left:2px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .table thead th {
+        background-color: #fb5849;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .table tbody tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+    .table tbody td {
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .table tbody tr:hover {
+        background-color: #ddd; /* Background color on hover */
+    }
+
+/* Header Styles */
+h1 {
+    color: navy;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+/* Link as Button Styles */
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left:10px;
+    background-color: #fb5849;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .button-link:hover {
+        background-color: red;
+    }
+
+
+/* Form Styles */
+form {
+    display: inline-block;
+}
+
+select.form-control {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #fb5849;
+    color:white;
+}
+ 
+button.btn-primary {
+    background-color: #fb5849;
+    border-color: #fb5849;
+
+}
+
+    button.btn-primary:hover {
+        background-color: red;
+        border-color: red;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .table thead, .table tbody, .table th, .table td, .table tr {
+        display: block;
+    }
+
+        .table thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+    .table tr {
+        border: 1px solid #ccc;
+    }
+
+    .table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+    }
+
+        .table td:before {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            transform: translateY(-50%);
+            content: attr(data-label);
+            font-weight: bold;
+            text-align: left;
+        }
+}

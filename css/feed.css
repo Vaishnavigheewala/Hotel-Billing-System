@@ -1,0 +1,178 @@
+/* Set background image */
+body {
+    /*background-image: url('../images/maa.jpg');*/ /* Path to your background image */
+    background-size: 800px;
+    background-position: center;
+}
+h4 {
+    text-align: center;
+    color: #fb5849;
+    font-weight:bold;
+    margin-top:-20px;
+}
+
+/* Center the form vertically and horizontally */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+/* Form container */
+.col-md-4 {
+    max-height: 800px;
+  /*  background-color: white;*/
+    background: linear-gradient(145deg, #ffe6e6, #fff);
+    /* Semi-transparent white background */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* Styles for form elements */
+.form-group {
+    margin-bottom: 10px;
+    margin-top:-5px;
+}
+
+.control-label {
+    font-weight: bold;
+    color: orangered;
+   
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top:2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: orangered; /* Button background color */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .btn-primary:hover {
+        background-color: red; /* Button background color on hover */
+    }
+
+.form-check-label {
+    display: flex;
+    align-items: center;
+    color: orangered;
+    font-weight:bold;
+    margin-top: -25px;
+}
+
+.form-check-input {
+    margin-right: 10px;
+
+}
+
+
+a {
+    color: orangered;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+
+footer {
+    margin-top: 60px;
+    padding: 2px 0px;
+    background-color: #fb5849;
+}
+
+    footer .left-text-content p {
+        margin-top: 5px;
+        color: #fff;
+        font-size: 14px;
+        text-align: right;
+    }
+
+    footer .right-text-content p {
+        color: #fff;
+        font-size: 14px;
+        margin-right: 15px;
+        text-transform: uppercase;
+    }
+
+
+    footer .right-text-content {
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    footer .logo {
+        text-align: center;
+        margin-left: 80px;
+    }
+
+    footer .right-text-content ul li {
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+        footer .right-text-content ul li:first-child {
+            margin-left: 0px;
+        }
+
+
+        footer .right-text-content ul li a {
+            width: 40px;
+            height: 44px;
+            display: inline-block;
+            text-align: center;
+            line-height: 44px;
+            font-size: 20px;
+            background-color: white;
+            margin-left: 35px;
+            border-radius: 50%;
+            color: #fb5849;
+            -webkit-transition: all 0.5s ease 0s;
+            -moz-transition: all 0.5s ease 0s;
+            -o-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+        }
+
+            footer .right-text-content ul li a:hover {
+                color: #2a2a2a;
+            }
+
+
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+    padding: 20px;
+    user-select: none;
+    margin-top:-20px;
+}
+
+    .star-rating input[type="radio"] {
+        display: none;
+    }
+
+    .star-rating label {
+        color: #bbb;
+        font-size: 40px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+        .star-rating label:hover,
+        .star-rating label:hover ~ label,
+        .star-rating input[type="radio"]:checked ~ label {
+            color: #fb5849;
+        }

@@ -1,0 +1,75 @@
+﻿/* Set background image */
+body {
+    /*background-image: url('../images/maa.jpg');*/ /* Path to your background image */
+    background-size: 800px;
+    background-position: center;
+  
+    
+}
+
+/* Center the form vertically and horizontally */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:2px;
+}
+
+/* Form container */
+.col-md-4 {
+    max-height: 450px;
+    background-color: white;
+     /* Semi-transparent white background */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+/* Styles for form elements */
+.form-group {
+    margin-bottom: 20px;
+   
+}
+
+.control-label {
+    font-weight: bold;
+    color: orangered;
+    /*margin-left:140px;*/
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    margin-top:20px;
+    border: none;
+    border-radius: 5px;
+    background-color: orangered; /* Button background color */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .btn-primary:hover {
+        background-color: red; /* Button background color on hover */
+    }
+
+
+a {
+    color: orangered;
+    text-decoration: none;
+    font-weight: bold;
+    align-items:center;
+    text-align:center;
+}
+.back-link {
+    margin-left: 160px;
+    
+}
